@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Shellcial.github.io/TestReactNativeWebsite",
   "name": "testfeatures",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
@@ -20,7 +23,8 @@
     "react-native-web": "~0.18.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "gh-pages": "^4.0.0"
   },
   "private": true
 }
